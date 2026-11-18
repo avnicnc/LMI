@@ -16,10 +16,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 - `functions.php`: Updated `dequeue_font_awesome_by_url()` to explicitly whitelist and keep the `fontawsome` stylesheet handle, preserving the accessibility toolbar icon (♿) from the SOGO Accessibility plugin in the header.
 - `wp-config.php`: Set `WP_DEBUG_DISPLAY = false` to write PHP warnings and notices silently to `wp-content/debug.log` without breaking frontend page layouts or AJAX responses.
+- `css/screen.css` & `js/script.js`: Optimized the homepage Rolling Circle animation:
+  - Reduced CSS transition duration from `0.6s` to a snappy `0.35s` (`cubic-bezier(0.25, 1, 0.5, 1)`).
+  - Eliminated the `0.1s` transition delay (`transition-delay: 0s`).
+  - Lowered scroll trigger threshold in `checkCircleAnimation()` from `30%` element height down to `top + 50px` for immediate viewport entry triggering.
+  - Reduced `active_pointer` timeout from `700ms` to `350ms`.
+  - Removed artificial `.delay(100)` from all 9 circle slice hover handlers for instant response on hover.
 
 ### Maintenance Roadmap / Upcoming Fixes
 - [ ] **Footer Copyright Year**: Update Footer UX Block #350 to replace hardcoded `2025` with `[year]`.
-- [ ] **Rolling Circle Animation Speed**: Optimize viewport scroll trigger threshold in `js/script.js` and snappier transition duration in `css/screen.css`.
+- [x] **Rolling Circle Animation Speed**: Optimized viewport scroll trigger threshold in `js/script.js` and snappier transition duration in `css/screen.css`.
 - [ ] **Contact Form AJAX Validation**:
   - Remove duplicate Gravity Forms HTML container (`#gform_fields_2`) pasted in the Contact page content.
   - Exclude Gravity Forms and reCAPTCHA scripts from WP Rocket's "Delay JavaScript Execution" list.

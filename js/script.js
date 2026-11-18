@@ -9,97 +9,61 @@ jQuery(document).ready(function(){
 
 
     jQuery(".main-circle .1").hover(function(){    
-      jQuery(this).delay(100).queue(function(){  
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-1.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".1.TEXTBOX").removeClass("hidden");
-    });      
-    }, function(){
-      jQuery(this).finish();
-  });
+    });
   
-  jQuery(".main-circle .2").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    jQuery(".main-circle .2").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-2.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".2.TEXTBOX").removeClass("hidden");
-    });         
-    }, function(){
-      jQuery(this).finish();
-  });
+    });
   
-  jQuery(".main-circle .3").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    jQuery(".main-circle .3").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-3.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".3.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .4").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .4").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-4.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".4.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .5").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .5").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-5.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".5.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .6").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .6").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-6.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".6.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .7").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .7").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-7.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".7.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .8").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .8").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-8.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".8.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
-  jQuery(".main-circle .9").hover(function(){    
-    jQuery(this).delay(100).queue(function(){  
+    });
+    jQuery(".main-circle .9").hover(function(){    
       jQuery(".main-circle .banner-layers.container").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo-9.png)");
       jQuery(".banner .banner-bg .bg.bg-loaded").css("background-image", "url("+url+"/wp-content/uploads/2021/11/main-logo.png)");
       jQuery(".TEXTBOX").addClass("hidden");
       jQuery(".9.TEXTBOX").removeClass("hidden");
-    });          
-    }, function(){
-      jQuery(this).finish();
-  });
+    });
   if(jQuery('.Indices .col-inner').length > 0)
   {
     var element_position = jQuery('.Indices .col-inner').offset().top;
@@ -179,25 +143,25 @@ function checkCircleAnimation() {
   $('.main-circle').each(function () {
       var $el = $(this);
       if ($el.hasClass('come-in')) return;
-      var bottom_of_object = $el.offset().top + ($el.outerHeight() * 0.3);
+      var bottom_of_object = $el.offset().top + 50;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
       if (bottom_of_window > bottom_of_object) {
         $el.addClass('come-in');
         setTimeout(() => {
             $el.addClass('active_pointer');
-        }, 700);
+        }, 350);
       }
   });
 
   $('.round_model .section-content .TEXTBOX').each(function () {
     var $el = $(this);
     if ($el.hasClass('come-in')) return;
-    var bottom_of_object = $el.offset().top + ($el.outerHeight() * 0.3);
+    var bottom_of_object = $el.offset().top + 50;
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     if (bottom_of_window > bottom_of_object) {
        setTimeout(() => {
          $el.addClass('first_animi come-in');
-       }, 250);
+       }, 100);
     }
   });
 }
