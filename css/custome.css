@@ -1,0 +1,203 @@
+.align-items-start{align-items: flex-start !important;}
+.btn-auto{width:fit-content !important;}
+
+.menu-item .sub-menu{pointer-events: none;}
+li.current-dropdown>.nav-dropdown, .next-prev-thumbs li.has-dropdown:hover>.nav-dropdown, .no-js li.has-dropdown:hover>.nav-dropdown{pointer-events: visible;}
+
+body .contact-section{z-index:99;}
+.contactForm .col-inner{border-radius: 40px;background: #FFF;box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.08);}
+.contactForm input, .contactForm textarea{border-radius: 12px !important;border: 1px solid #D1D1D1 !important; box-shadow:none !important; padding:14px 14px 14px 56px !important; height:53px !important; background-repeat:no-repeat;background-position:22px center;}
+.contactForm input::placeholder, .contactForm textarea::placeholder{color: #000; font-weight: 600; opacity: 80%; font-family: 'DM Sans';}
+.contactForm textarea{height:178px !important; min-height:178px !important;}
+.contactForm .gform_drop_area{padding:0 !important; position: relative !important; overflow: hidden; border-radius: 12px; background:none; border-color: #2A49B7;}
+body #wrapper .contactForm .gform_drop_area button{margin-bottom: 0 !important; margin-right: 0 !important; font-size: 0; padding: 0 !important; border: 0; width: 100%; height: 94px; border-radius: 0 !important; background-color:inherit; background-image: url(../../../uploads/2023/08/upload-file.svg); background-repeat:no-repeat;background-position:center 10px;}
+.contactForm .gform_drop_instructions{display:none !important}
+body #wrapper .contactForm .gform_drop_area label{border: inherit; clip: inherit; -webkit-clip-path: inherit; clip-path: inherit; height: inherit; margin: inherit; overflow: inherit; padding: inherit; position: inherit; width: inherit; word-wrap: inherit!important;}
+body #wrapper .contact-info h2{margin-bottom:15px; color:#000; font-size: 30px;}
+body #wrapper .contact-info h2 span{color:#2a49b7;}
+body #wrapper .contact-info h2 + p{font-weight: 600;}
+body #wrapper .contact-info h3{margin-bottom: 0; color: #000; font-size: 16px; font-weight: bold;}
+body #wrapper .contact-info .row .col{padding-bottom:12px !important;}
+body #wrapper .contact-info p{font-weight: 500;}
+body #wrapper .contact-info p a{color: #000;}
+body #wrapper .contact-info p a:hover{text-decoration: underline;}
+.contactForm .name-input input{background-image: url(../../../uploads/2023/08/user-icon.svg);}
+.contactForm .email-input input{background-image: url(../../../uploads/2023/08/env-icon.svg);}
+.contactForm .phone-inupt input{background-image: url(../../../uploads/2023/08/phone-s-icon.svg);}
+.contactForm .subject-input input{background-image: url(../../../uploads/2023/08/subject-icon.svg);}
+.contactForm .massage-input textarea{background-image: url(../../../uploads/2023/08/message-icon.svg); background-position:22px 22px;}
+.contactForm .upload-file-input { display: flex; flex-wrap: wrap; justify-content:space-between; align-items:center; }
+.contactForm .upload-file-input #gform_preview_2_6{width:100%}
+.contactForm .upload-file-input .ginput_container{width: calc(100% - 200px); position: relative;}
+.contactForm .font_8{display: none;}
+
+.contactForm .upload-file-input .gfield_label{position: relative;}
+.contactForm .upload-file-input .gfield_label::after{content: 'Max. file size: 64 MB.'; display: block; font-weight: 400; font-size: 14px;}
+.contact-info .featured-box{align-items: center;}
+
+.gform_validation_errors{display: none;}
+.gform_wrapper.gravity-theme .gfield_label span{display: block; font-weight: 400; font-size: 14px; color: #8D8D8D;}
+.gform_wrapper.gravity-theme .gfield_label span strong{color: #000;}
+body .gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message{padding: 0 !important; background: none; border: none; font-size: 13px !important; margin-top: 5px !important;}
+.gfield_error input, .gfield_error textarea{border-color: #c02b0a !important; background-color: #fff9f9 !important;}
+.contactForm .gfield_error .gform_drop_area{border-color: #c02b0a !important;}
+
+
+.contactMap p{margin-bottom:0;}
+.gform_wrapper.gravity-theme .gform_fileupload_rules{margin-top: -53px; font-size: 13px !important; margin-bottom: 24px;}
+.materials-section .button_global{width: fit-content; padding-left:25px !important; padding-right:25px !important;}
+.materials-section .col{padding-bottom:40px}
+.footer-wrapper{z-index:2;}
+/* .border_radius_right .video-fit iframe,.border_radius_right iframe{border-top-left-radius:40px;border-bottom-right-radius:40px;} */
+.logo_section .col-inner .img-inner img {object-fit:contain;}
+#gform_fields_2 b,.contactForm h3,.contactForm h3 a{font-family:'DM Sans',sans-serif !important;}
+.contactForm h3 a,.contactForm h3{color: rgba(42, 73, 183, 0.80);}
+#gform_fields_2 b{font-weight: 600;}
+
+.section .section-content .col-inner a.button.primary.button_global.dark_button{background: #2a49b7!important;color: #fff!important;font-size: 14px;}
+.section .section-content .col-inner a.button.primary.button_global.dark_button:hover{background:#fff!important;color:#737c9f!important;}
+
+
+@media (max-width: 991px){
+	body .contact-section{padding-left:15px; padding-right: 15px;}
+	.contactForm .upload-file-input{flex-direction:column;}
+	.contactForm .upload-file-input .ginput_container{width:100%;}
+	body .contact-section{margin-top: 0;}
+	.round_model .section-content .small-col-first{order: 1;}
+	.round_model .section-content .TEXTBOX{order: 2;}
+	.round_model .section-content .small-col-first{right: 0;}
+.only-mob-video .play-button{
+display:block;
+}
+}
+@media (max-width: 767px){
+
+}
+
+/* -----------------------------------------------------------------------
+   Privacy Policy Acceptance Text — above Send button in Contact Form
+   ----------------------------------------------------------------------- */
+.lmi-privacy-acceptance {
+    margin-bottom: 12px;
+}
+.lmi-privacy-acceptance p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-family: 'DM Sans', sans-serif;
+}
+.lmi-privacy-acceptance p a {
+    color: #2a49b7;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.lmi-privacy-acceptance p a:hover {
+    color: #1a35a0;
+    text-decoration: underline;
+}
+
+
+/* Footer Container - Keeps the full-width bar effect */
+body .contact-section .gform_footer {
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin: 16px !important;
+    padding: 0px !important;
+    position: relative;
+    border: 1px solid #000000 !important;
+    height: 48px !important;
+    box-sizing: border-box;
+    transition: 0.5s all ease;
+}
+
+/* Submit Button - Removes the button's own border to sit clean in the bar */
+body .contact-section .gform_footer #gform_submit_button_2 {
+    background: transparent !important;
+    border: none !important;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    line-height: normal !important;
+    transition: 0.5s all ease;
+	align-self: center;
+	width: max-content;
+}
+
+/* Hover State for the Full Bar */
+body .contact-section .gform_footer:hover {
+    background: #2a49b7 !important;
+}
+body .contact-section .gform_footer:hover #gform_submit_button_2 {
+    color: #ffffff !important;
+}
+
+/* Gravity Forms Spinner — Precise Horizontal Fix */
+body .gform_wrapper img[id^="gform_ajax_spinner_"],
+body .gform_wrapper .gform_ajax_spinner,
+body .gform_wrapper .gform-loader,
+img#gform_ajax_spinner_2 {
+    background-color: transparent !important;
+    background-image: none !important;
+    width: 15px !important;
+    height: 15px !important;
+    position: relative !important;
+    margin: 0 0 0 10px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    z-index: 999 !important;
+    filter: brightness(0) invert(1);
+}
+.mobile-footer-menu { display: none; }
+
+span#gfield_upload_rules_2_6 { 
+    margin-top: -59px;
+}
+.gform_wrapper.gravity-theme .ginput_preview { flex-wrap: wrap; }
+.gform_wrapper.gravity-theme .ginput_preview button.gform_delete_file { line-height: normal; }
+@media (min-width: 1200px) {
+	.toggle_sogoacc i.fa-wheelchair { font-size: 50px !important; }
+}
+
+@media (max-width: 1199px) {
+	span#gfield_upload_rules_2_6 {  
+		margin-top: -69px; 
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 549px) {
+	.footer_section .col.social_media_footer, .footer_section .col.medium-5.small-12.large-3 {
+		max-width: 50%;
+		flex-basis: 50%;
+	}
+	.footer_section .col.medium-4.small-2.large-3 {
+		margin-left: 15px;
+	}
+	.desktop-footer-menu { display: none; }
+	.mobile-footer-menu { display: block; }
+	.gform_wrapper.gravity-theme .ginput_preview { font-size: 15px; }
+	.gform_wrapper.gravity-theme .ginput_preview button.gform_delete_file { padding: 0 5px; }
+	
+}
+/*for contact pafge - whole div to behave like a big button start.*/
+.gform-footer {
+    position: relative;
+}
+.gform-footer input[type="submit"] {  
+    inset: 0;
+    width: 100%;
+    height: 100%;   
+    cursor: pointer;
+    z-index: 10;	
+}
+/*for contact pafge - whole div to behave like a big button start.*/
+
