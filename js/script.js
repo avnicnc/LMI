@@ -278,9 +278,3 @@ $(document).ready(function () {
     });
 });
 
-jQuery(document).on('click', '.gform_footer', function (e) {
-    var $submitBtn = jQuery(this).find('input[type="submit"], button[type="submit"], #gform_submit_button_2');
-    if (!$submitBtn.length || $submitBtn.prop('disabled')) return;
-    if (e.target === $submitBtn[0] || jQuery.contains($submitBtn[0], e.target)) return;
-    $submitBtn.trigger('click');
-});

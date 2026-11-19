@@ -4,7 +4,7 @@
 add_action('wp_enqueue_scripts', 'lmi_scripts');
 function lmi_scripts()
 {
-    $version = '1.0.2';
+    $version = '1.0.4';
     // Theme stylesheet.
     wp_enqueue_style('lmi-style', get_stylesheet_uri(), [], $version);
     wp_enqueue_style('lmi-screen-style', get_theme_file_uri('css/screen.css'), [], $version);

@@ -112,9 +112,10 @@ body .contact-section .gform_footer {
     height: 48px !important;
     box-sizing: border-box;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
-/* Submit Button - Removes the button's own border to sit clean in the bar */
+/* Submit Button - Fills entire bar so native AJAX click is always direct */
 body .contact-section .gform_footer #gform_submit_button_2 {
     background: transparent !important;
     border: none !important;
@@ -123,11 +124,14 @@ body .contact-section .gform_footer #gform_submit_button_2 {
     cursor: pointer;
     padding: 0 !important;
     margin: 0 !important;
-    height: auto !important;
-    line-height: normal !important;
+    position: absolute;
+    inset: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 2;
+    line-height: 48px !important;
     transition: 0.5s all ease;
-	align-self: center;
-	width: max-content;
+    text-align: center;
 }
 
 /* Hover State for the Full Bar */
