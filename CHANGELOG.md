@@ -33,11 +33,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Reduced `active_pointer` timeout from `700ms` to `350ms`.
   - Removed artificial `.delay(100)` from all 9 circle slice hover handlers for instant response on hover.
 
-### Maintenance Roadmap / Upcoming Fixes
-- [ ] **Footer Copyright Year**: Update Footer UX Block #350 to replace hardcoded `2025` with `[year]`.
-- [x] **Rolling Circle Animation Speed**: Optimized viewport scroll trigger threshold in `js/script.js` and snappier transition duration in `css/screen.css`.
-- [ ] **Contact Form AJAX Validation**:
-  - Remove duplicate Gravity Forms HTML container (`#gform_fields_2`) pasted in the Contact page content.
-  - Exclude Gravity Forms and reCAPTCHA scripts from WP Rocket's "Delay JavaScript Execution" list.
-- [ ] **Server Plugin Cleanup**: Delete redundant caching plugins installed by hosting (`breeze`, `ezcache`, `nitropack`, `object-cache-pro`) and keep WP Rocket as the single caching layer.
-- [ ] **Security & Malware Scan**: Run core checksum verification and Wordfence scan against official WordPress repository hashes.
+### Maintenance Roadmap / Status (1-Line Summary)
+- [x] **CSS Animation**: Accelerated circle roll-in to `0.35s` (`cubic-bezier`), lowered trigger to `top + 50px`, and removed hover delays in `screen.css` and `script.js`.
+- [ ] **Contact Form / CF7**: Cleaned button in `custome.css`/`script.js`; remove duplicate `#gform_fields_2` container in page content and enable `ajax="true"` on shortcode.
+- [ ] **Footer Copyright Year**: Shortcode `[year]` added to `functions.php`; update UX Block #350 in WP Admin to replace hardcoded `2025` with `[year]`.
+- [x] **Server Plugin Cleanup**: Verified deleted redundant caching plugins (`breeze`, `ezcache`, `nitropack`, `object-cache-pro`), keeping WP Rocket as single caching layer.
+- [ ] **WP Rocket Delay JS Exclusions**: Add Gravity Forms & reCAPTCHA patterns (`/wp-content/plugins/gravityforms/`, `/wp-content/plugins/gravityformsrecaptcha/`, `/wp-includes/js/jquery/`, `gform`, `gformInitSpinner`, `gf_apply_rules`, `recaptcha`) to WP Rocket settings.
