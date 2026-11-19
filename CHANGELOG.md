@@ -3,6 +3,16 @@
 All notable changes to the LMI website maintenance and child theme are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.4] - 2026-11-19
+
+### Added
+- `CIRCULAR_ANIMATION_CHANGES.md`: In-depth documentation and code comparisons for the Rolling Circle animation optimizations.
+
+### Fixed
+- `css/custome.css` & `js/script.js`: Contact Form submit button enhancements:
+  - Removed synthetic click event listener from `script.js`.
+  - Expanded native Gravity Forms submit button (`#gform_submit_button_2`) to 100% width and height of `.gform_footer` with matching hover cursor and alignment.
+
 ## [1.0.3] - 2026-11-18
 
 ### Added
